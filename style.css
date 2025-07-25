@@ -272,11 +272,11 @@ header,
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
+}
 /* responsive section */
 
 /* small device: eg:mobile */
 @media screen and (max-width: 576px) {
-  
   .nav-item1,
   .nav-item2,
   .nav-item3{
@@ -354,7 +354,14 @@ header,
     font-weight: 600;
     text-underline-offset: 3px;
   }
+  .join-section{
+    padding: 100px 35px 60px;
+  }
   .join-section-title{
     font-size: 1.125rem;
+  }
+  .email-section button{
+    font-size: 1rem;
+    padding: 15px 7px;
   }
 }
