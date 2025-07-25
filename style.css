@@ -395,6 +395,7 @@ header,
   }
   .join-section {
     padding: 100px 10px 60px;
+    margin-top: 40px;
   }
   .join-section-title {
     font-size: 1.125rem;
@@ -402,6 +403,9 @@ header,
   .email-section button {
     font-size: 1rem;
     padding: 15px 7px;
+  }
+  .footer{
+    margin-top: 30px;
   }
   .footer-container{
     grid-template-columns: 1fr;
