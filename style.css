@@ -23,7 +23,8 @@ header,
 .banner-section,
 .plant-section,
 .plants-lover-section,
-.latest-deals-section {
+.latest-deals-section,
+.footer {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -57,7 +58,8 @@ header,
 /* main section */
 .banner-section,
 .plant-section,
-.join-section {
+.join-section,
+.footer {
   margin-top: 100px;
 }
 /* banner section */
@@ -237,8 +239,9 @@ header,
 }
 
 /* join section */
-.join-section{
-  background-image: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),url("images/news-letter-bg.png");
+.join-section {
+  background-image: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),
+    url("images/news-letter-bg.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -246,25 +249,24 @@ header,
   justify-content: center;
   align-items: center;
   padding: 200px 300px;
-  
 }
-.join-section-title{
+.join-section-title {
   font-size: 2.8rem;
   font-weight: 700;
   color: white;
   margin-bottom: 30px;
 }
-.email-section{
+.email-section {
   width: 100%;
   display: flex;
 }
-.email-section input[type="email"]{
+.email-section input[type="email"] {
   flex: 1;
   border: none;
   outline: none;
   padding-left: 20px;
 }
-.email-section button{
+.email-section button {
   color: white;
   background-color: #e95a08;
   padding: 20px 50px;
@@ -273,13 +275,45 @@ header,
   font-size: 1rem;
   font-weight: 600;
 }
+/* footer section */
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-description{
+  font-size: 1.125rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer li{
+  list-style: none;
+  font-size: 1rem;
+}
+.footer a{
+  text-decoration: none;
+  color: rgb(107, 114, 128);
+}
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+}
+.link-column li{
+  margin-bottom: 30px;
+}
+.footer-social{
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
 /* responsive section */
 
 /* small device: eg:mobile */
 @media screen and (max-width: 576px) {
   .nav-item1,
   .nav-item2,
-  .nav-item3{
+  .nav-item3 {
     display: none;
   }
   .banner-section {
@@ -326,42 +360,60 @@ header,
   .trusted-icon {
     display: none;
   }
-  .latest-deals-section,.latest-deals-header{
+  .latest-deals-section,
+  .latest-deals-header {
     margin-top: 30px;
   }
-  .latest-deals-title{
+  .latest-deals-title {
     font-size: 1.5rem;
   }
-  .latest-deals-description{
+  .latest-deals-description {
     font-size: 1rem;
   }
-  .latest-deals{
+  .latest-deals {
     grid-template-columns: 1fr;
   }
-  .latest-deal-2{
+  .latest-deal-2 {
     order: 3;
   }
-  .latest-deal-2{
+  .latest-deal-2 {
     order: 2;
     padding: 60px 45px;
   }
-  .latest-deal-1 h4, .latest-deal-2 h4, .latest-deal-3 h4{
+  .latest-deal-1 h4,
+  .latest-deal-2 h4,
+  .latest-deal-3 h4 {
     font-size: 1.15rem;
     font-weight: 700;
   }
-  .latest-deal-1 a, .latest-deal-2 a, .latest-deal-3 a {
+  .latest-deal-1 a,
+  .latest-deal-2 a,
+  .latest-deal-3 a {
     font-size: 1rem;
     font-weight: 600;
     text-underline-offset: 3px;
   }
-  .join-section{
-    padding: 100px 35px 60px;
+  .join-section {
+    padding: 100px 10px 60px;
   }
-  .join-section-title{
+  .join-section-title {
     font-size: 1.125rem;
   }
-  .email-section button{
+  .email-section button {
     font-size: 1rem;
     padding: 15px 7px;
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+  .footer-description{
+    font-size: 1rem;
+  }
+  .footer-links{
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-social{
+    justify-content: flex-start;
   }
 }
