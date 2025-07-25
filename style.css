@@ -243,10 +243,6 @@ header,
   .nav-item3 {
     display: none;
   }
-  .nav-section {
-    max-width: 360px;
-    margin: 0 auto;
-  }
   .banner-section {
     flex-direction: column-reverse;
     gap: 28px;
@@ -317,7 +313,7 @@ header,
     font-size: 1.15rem;
     font-weight: 700;
   }
-  .latest-deal-2 div{
+  .latest-deal-1 a, .latest-deal-2 a, .latest-deal-3 a {
     font-size: 1rem;
     font-weight: 600;
     text-underline-offset: 3px;
